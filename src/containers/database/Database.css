@@ -1,9 +1,10 @@
 .Database{
     display: flex;
-    padding-top: 20px;
+    padding: 20px 10px;
     flex-grow: 1;
     width: 100%;
     background: white;
+    flex-direction: column;
 
 
 }

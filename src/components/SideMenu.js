@@ -14,7 +14,7 @@ const SideMenu = (props) => (
     <ul className="ul-menu-list">
         {list.map(item => (
             (item.id === 0 || item.id === 1) && props.user === 0 ?
-            null : <li key={item.id} className="ul-no-point"><a>{item.title}</a></li>
+            null : <li key={item.id} className="ul-no-point"><a href={null}>{item.title}</a></li>
         ))}
     </ul>
 );

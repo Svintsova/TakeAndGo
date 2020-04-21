@@ -40,6 +40,7 @@ class Database extends Component{
     render() {
         return (
             <div className="Database">
+                <h1>Список пользователей</h1>
                 <div className="MemberBox">
                     <UserList
                         users={this.state.users}
