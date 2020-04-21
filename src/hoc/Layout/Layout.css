@@ -1,0 +1,13 @@
+.Layout {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.Layout main {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-grow: 1;
+
+}

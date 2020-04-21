@@ -1,0 +1,24 @@
+.sg-input {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin: 10px 0px;
+    padding: 5px 15px;
+    min-width: 200px;
+    min-height: 25px;
+}
+
+.sg-input:focus {
+    border: 1px solid #EEA849;
+}
+
+.sg-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 40vw;
+    margin: 0 auto;
+    min-height: 100vh;
+}

@@ -141,3 +141,74 @@
   flex-direction: column;
   align-items: flex-start;
 }
+
+
+
+.act-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.btn-action-back {
+  background: #000000;
+}
+
+.btn-action-take {
+  background: linear-gradient(90deg, #F46B45 0%, #EEA849 100%);
+}
+
+.act-btn-main {
+  width: 200px;
+  height: 80px;
+  border-radius: 15px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  width: 40vw;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+.btn {
+  flex: 1 1 auto;
+  margin: 10px;
+  padding: 30px;
+  min-width: 50px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-position: right center;
+}
+
+.btn-1 {
+  background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #EEA849 100%);
+}
+.btn-2 {
+  background-image: linear-gradient(to right, #115293 0%, #1976d2 51%, #4791db 100%);
+}

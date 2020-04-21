@@ -12,7 +12,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import { createMuiTheme } from '@material-ui/core/styles';
 import './App.css';
 import {RentItem} from './App.js';
-//import {RentItem} from 'Components/RentItem.js';
+//import {RentItem} from 'components/RentItem.js';
 
 const drawerWidth = 240;
 

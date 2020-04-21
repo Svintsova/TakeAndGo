@@ -1,0 +1,14 @@
+.Database{
+    display: flex;
+    padding-top: 20px;
+    flex-grow: 1;
+    width: 100%;
+    background: white;
+
+
+}
+
+.MemberBox{
+    width: 100%;
+
+}

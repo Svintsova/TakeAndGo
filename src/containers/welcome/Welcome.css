@@ -1,0 +1,11 @@
+.Welcome {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    flex-grow: 1;
+    width: 100%;
+    background: linear-gradient(179.73deg, #1488CC 0.33%, #2B32B2 99.66%);
+}
+.Welcome h1 {
+
+}

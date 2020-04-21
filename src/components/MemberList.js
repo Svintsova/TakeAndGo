@@ -28,6 +28,7 @@ const MemberList = () => (
                     <th>{user.id}</th>
                     <th>{user.name}</th>
                     <th>{user.occupation}</th>
+                   
                 </tr>
 
             ))}

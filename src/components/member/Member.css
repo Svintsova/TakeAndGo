@@ -1,0 +1,24 @@
+.Member{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    padding: 10px;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    color: black;
+    margin: 0 10px;
+    box-sizing: border-box;
+}
+
+.Member p {
+    padding: 0px;
+    margin: 0px;
+    min-width: 30vw;
+
+}
+
+.Member:hover {
+    background: rgba(0,0,255,.1);
+    transition: background .3s ease-in-out;
+}
+
