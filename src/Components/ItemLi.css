@@ -1,0 +1,5 @@
+.ul-no-point {
+    list-style-type: none;
+    padding: 10px;
+    text-align: left;}
+.ul-menu-list {padding: inherit;}

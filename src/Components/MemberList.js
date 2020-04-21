@@ -14,15 +14,20 @@ const users = [
 ];
 
 const MemberList = () => (
-    <ul>
+    <table className="userTable">
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>SURNAME</th>
+        </tr>
         {users.map(user => (
-            <li key={user.id}>
-                <div>{user.id}</div>
-                <div>{user.name}</div>
-                <div>{user.occupation}</div>
-            </li>
+            <tr key={user.id}>
+                <th>{user.id}</th>
+                <th>{user.name}</th>
+                <th>{user.occupation}</th>
+            </tr>
         ))}
-    </ul>
+    </table>
 );
 
 export default MemberList;

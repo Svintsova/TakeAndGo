@@ -1,5 +1,5 @@
 import React from 'react';
-import 'src/App.css';
+import './ItemLi.css'
 const list = [
     {id: 0, title: 'База данных',},
     {id: 1, title: 'Статистика',},
@@ -11,10 +11,10 @@ const list = [
 
 
 const SideMenu = (props) => (
-    <ul>
+    <ul className="ul-menu-list">
         {list.map(item => (
             (item.id === 0 || item.id === 1) && props.user === 0 ?
-            null : <li key={item.id} style = {listStyleType: 'none'}><div>{item.title}</div></li>
+            null : <li key={item.id} className="ul-no-point"><a>{item.title}</a></li>
         ))}
     </ul>
 );

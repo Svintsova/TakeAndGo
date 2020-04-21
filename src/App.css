@@ -1,7 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap');
+
 .App {
   text-align: center;
   display: flex;
   flex-direction: row;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .App-logo {
@@ -39,6 +43,8 @@
   }
 }
 
+.min-margin {margin: 5px;
+}
 
 .RentItem-bg {
   background: #000000;
@@ -53,10 +59,7 @@
 
   max-width: 500px;
   min-width: 192px;
-
   margin: 20px auto;
-  font-family: 'Montserrat';
-  font-style: normal;
   color: #FFFFFF;
   line-height: 25px;
 }
@@ -86,9 +89,6 @@
 }
 
 
-.nomargin {
-
-}
 
 .icon {
   width: 54px;
@@ -104,9 +104,40 @@
 
 
 .sideMenu {
-  width: 240px;
+  width: 200px;
+  height: 100%;
   background: linear-gradient(177.29deg, #1488CC 0.83%, #2B32B2 99.13%);
   color: white;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .ul-no-point {list-style-type: none;}
+
+.logo {
+  width: 150px;
+  height: 50px;
+  background-size: contain;
+  background-image: url("logow.png");
+}
+
+
+.userTable {
+
+  display: table;
+  border: 1px solid black;
+  border-collapse: separate;
+  border-spacing: 0;
+  padding: 10px;
+  margin: 20px;
+}
+
+.main {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
