@@ -1,0 +1,112 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.RentItem-bg {
+  background: #000000;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: space-around;;
+  align-items: center;
+  flex-wrap: wrap;
+
+  max-width: 500px;
+  min-width: 192px;
+
+  margin: 20px auto;
+  font-family: 'Montserrat';
+  font-style: normal;
+  color: #FFFFFF;
+  line-height: 25px;
+}
+
+.RentItem-text {
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+}
+
+.RentItem-id-box {
+  background: linear-gradient(90deg, #F46B45 0%, #eea849 100%);
+  border-radius: 15px;
+  width: 145px;
+  height: 60px;
+
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.nomargin {
+
+}
+
+.icon {
+  width: 54px;
+  height: 54px;
+  fill: #FFFFFF;
+  filter: invert(100%);
+}
+
+
+.lg-blue {
+  background: linear-gradient(177.29deg, #1488CC 0.83%, #2B32B2 99.13%);
+}
+
+
+.sideMenu {
+  width: 240px;
+  background: linear-gradient(177.29deg, #1488CC 0.83%, #2B32B2 99.13%);
+  color: white;
+}
+
+.ul-no-point {list-style-type: none;}
