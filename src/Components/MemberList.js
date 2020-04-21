@@ -15,18 +15,23 @@ const users = [
 
 const MemberList = () => (
     <table className="userTable">
-        <tr>
-            <th>ID</th>
-            <th>NAME</th>
-            <th>SURNAME</th>
-        </tr>
-        {users.map(user => (
-            <tr key={user.id}>
-                <th>{user.id}</th>
-                <th>{user.name}</th>
-                <th>{user.occupation}</th>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>SURNAME</th>
             </tr>
-        ))}
+        </thead>
+        <tbody>
+            {users.map(user => (
+                <tr key={user.id}>
+                    <th>{user.id}</th>
+                    <th>{user.name}</th>
+                    <th>{user.occupation}</th>
+                </tr>
+
+            ))}
+        </tbody>
     </table>
 );
 
