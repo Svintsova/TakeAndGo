@@ -1,6 +1,9 @@
 import React, {Component} from "react";
 import './Layout.css';
 import SideMenu from "../../components/SideMenu";
+
+
+
 class Layout extends Component{
     render() {
         return (

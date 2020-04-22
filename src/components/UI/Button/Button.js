@@ -1,20 +1,18 @@
 import React from 'react';
 import './Button.css'
-function Actions() {
 
+const Button = props => {
+    const cls = [
+        'btn', {props.type},
+    ]
 
     return(
-        <div>
-            <h2>Что ты хочешь сделать?</h2>
-            <div className='container'>
-                <div className="btn btn-2">Оставить</div>
-                <div className=" btn btn-1">Взять</div>
-            </div>
+        <div onClick={props.onClick}
+             className={cls.join(' ')}
+             disabled={props.disabled}>
+            {props.children}
         </div>
     )
 }
 
-
-
-
-export default Actions;
+export default Button;

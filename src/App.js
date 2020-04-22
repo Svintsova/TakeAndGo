@@ -8,28 +8,31 @@ import React, {Component} from 'react';
 import Layout from "./hoc/Layout/Layout";
 import Welcome from "./containers/welcome/Welcome";
 import Database from "./containers/database/Database";
+import Actions from "./containers/actions/Actions";
+import {Route} from "react-router-dom";
 
 
 class App extends Component {
     render() {
         return (
+
             <Layout>
-                <Database />
+                <Route path="/" exact render={() => <Welcome />} />
+                <Route path="/home"  render={() => <Home />} />
+                <Route path="/database" component={Database} />
+                <Route path="/actions"  component={Actions} />
             </Layout>
         );
     }
 }
 export default App
 
-// <nav>
-//     <div className="sideMenu">
-//         <div className="logo">
-//             <a href="" className=""></a>
-//         </div>
-//         <SideMenu user={1}/>
-//     </div>
-// </nav>
-// <main className="main">
-//     <Actions />
-//     <SignIn />
-// </main>
+class Home{
+
+    render() {
+        return (
+                <h1>Welcome page</h1>
+        );
+    }
+}
+

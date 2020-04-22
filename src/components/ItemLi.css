@@ -1,5 +1,14 @@
-.ul-no-point {
+.menuItem {
     list-style-type: none;
-    padding: 10px;
+    padding: 10px 20px;
     text-align: left;}
-.ul-menu-list {padding: inherit;}
+.ul-menu-list {
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.menuItem:hover {
+    background-color: rgba(255,255,255,.1);
+    transition: 0.5s;
+
+}
