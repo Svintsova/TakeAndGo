@@ -8,7 +8,7 @@ const list = [
     {id: 2, title: 'Личный кабинет', href: '/profile',},
     {id: 3, title: 'Действия', href: '/actions',},
     {id: 4, title: 'История', href: '/history',},
-    {id: 5, title: 'Выход', href: '/exit',},
+    {id: 5, title: 'Выход', href: '/',},
 ];
 
 

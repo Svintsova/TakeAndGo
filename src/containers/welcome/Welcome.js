@@ -8,6 +8,7 @@ class Welcome extends Component{
         return (
             <div className="Welcome">
                 <h1>Welcome page</h1>
+
             </div>
         );
     }

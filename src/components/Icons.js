@@ -15,5 +15,5 @@ const ICON_PATHS = {
 // export default Icon;
 
 export default ({type}) => {
-    return <img src={ICON_PATHS[type]} className="icon" />
+    return <img src={ICON_PATHS[type]} className="" />
 }
