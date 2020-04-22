@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import './Layout.css';
-import SideMenu from "../../components/SideMenu";
+import SideMenu from "../../containers/menu/SideMenu";
 
 
 
@@ -8,7 +8,7 @@ class Layout extends Component{
     render() {
         return (
             <div className="Layout">
-                <div className="cnt-menu"><SideMenu  /></div>
+                <div className="cnt-menu"><SideMenu user={0} /></div>
                 <main>
                     {this.props.children}
                 </main>
