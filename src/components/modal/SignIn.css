@@ -12,13 +12,17 @@
 }
 
 .sg-container {
+    max-width: 400px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    background-color: blue;
+    z-index: 90;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    width: 40vw;
-    margin: 0 auto;
-    min-height: 100vh;
+    justify-content: center;
+
 }
+
+

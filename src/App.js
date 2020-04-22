@@ -10,17 +10,21 @@ import Welcome from "./containers/welcome/Welcome";
 import Database from "./containers/database/Database";
 import Actions from "./containers/actions/Actions";
 import {Route} from "react-router-dom";
+import SignIn from "./components/modal/SignIn/SignIn";
 
 
 class App extends Component {
     render() {
         return (
-            <Layout>
+            <React.Fragment>
                 <Route path="/" exact render={() => <Welcome />} />
-                <Route path="/home"  render={() => <Home />} />
-                <Route path="/database" component={Database} />
-                <Route path="/actions"  component={Actions} />
-            </Layout>
+                <Route path="/signup" exact render={() => <Welcome />} />
+                <Route path="/signin" exact render={() => <SignIn />} />
+
+                <Route path="/home"  render={() => <Layout><Home /></Layout>} />
+                <Route path="/database" render={() => <Layout><Database /></Layout>} />
+                <Route path="/actions"  render={() => <Layout><Actions /></Layout>} />
+            </React.Fragment>
         );
     }
 }

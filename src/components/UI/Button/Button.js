@@ -3,7 +3,7 @@ import './Button.css'
 
 const Button = props => {
     const cls = [
-        'btn', {props.type},
+        'btn', props.style,
     ]
 
     return(
