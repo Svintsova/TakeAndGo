@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import './Database.css'
 import UserList from "../../components/member/UserList";
-
+import axios from 'axios'
 class Database extends Component{
     state = {
         users:[
@@ -32,6 +32,25 @@ class Database extends Component{
         ]
     }
 
+    async componentDidMount() {
+        try {
+            const response = await axios.get('https://takeandgo-36cc4.firebaseio.com/users.json')
+            const users = []
+            console.log(response.data)
+            Object.keys(response.data).forEach((key, index) =>{
+                users.push({
+                    id: key,
+                    name: key.name,
+                    surname: key.surname,
+                    type: key.access,
+                })
+                this.state({users})
+
+            })
+        } catch (e){
+                console.log(e)
+            }
+    }
 
     onDeleteClickHandler = (UserID) => {
         console.log('UserID: ', UserID)

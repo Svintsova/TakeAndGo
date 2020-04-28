@@ -1,4 +1,4 @@
-.Auth {
+.Add {
     display: flex;
     justify-content: center;
     padding-top: 100px;
@@ -9,33 +9,11 @@
 
 }
 
-.Auth > div{
+.Add > div{
     width: 100%;
     max-width: 600px;
     padding: 0px 20px;
 }
 
-.AuthForm {
-    background: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 15px;
-    box-sizing: border-box;
-}
-
-.AuthForm div {
-    margin: 5px 0;
-}
-.Button {
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-    flex-wrap: wrap;
-}
-.Button Button {
-    margin: 10px;
-    box-sizing: border-box;
-}
 
 
