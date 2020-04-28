@@ -8,7 +8,7 @@ class Layout extends Component{
     render() {
         return (
             <div className="Layout">
-                <div className="cnt-menu"><SideMenu user={0} /></div>
+                <div className="cnt-menu"><SideMenu user={1} /></div>
                 <main>
                     {this.props.children}
                 </main>

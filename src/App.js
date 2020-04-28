@@ -11,7 +11,11 @@ import Database from "./containers/database/Database";
 import Actions from "./containers/actions/Actions";
 import {Route} from "react-router-dom";
 import SignIn from "./components/modal/SignIn/SignIn";
-
+import History from "./containers/history/History";
+import Statistics from "./containers/statistics/Statistics";
+import Profile from "./components/Profile";
+import Auth from "./containers/auth/Auth";
+import Add from "./containers/addUsers/Add";
 
 class App extends Component {
     render() {
@@ -19,23 +23,18 @@ class App extends Component {
             <React.Fragment>
                 <Route path="/" exact render={() => <Welcome />} />
                 <Route path="/signup" exact render={() => <Welcome />} />
-                <Route path="/signin" exact render={() => <SignIn />} />
-
-                <Route path="/home"  render={() => <Layout><Home /></Layout>} />
+                <Route path="/signin" exact render={() => <Auth />} />
+                <Route path="/add" render={() => <Layout><Add /></Layout>} />
                 <Route path="/database" render={() => <Layout><Database /></Layout>} />
+                <Route path="/statistics"  render={() => <Layout><Statistics /></Layout>} />
+                <Route path="/profile"  render={() => <Layout><Profile /></Layout>} />
                 <Route path="/actions"  render={() => <Layout><Actions /></Layout>} />
+                <Route path="/history"  render={() => <Layout><History /></Layout>} />
             </React.Fragment>
         );
     }
 }
 export default App
 
-class Home{
 
-    render() {
-        return (
-                <h1>Welcome page</h1>
-        );
-    }
-}
 

@@ -1,15 +1,15 @@
 import React, {Component} from "react";
-import './Statistics.css';
+import './Profile.css';
 
 
-class Statistics extends Component{
+class Profile extends Component{
 
     render() {
         return (
             <div className="">
-                <h1>Statistics</h1>
+                <h1>Profile11</h1>
             </div>
         );
     }
 }
-export default Statistics;
+export default Profile;

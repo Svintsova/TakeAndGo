@@ -5,11 +5,11 @@
 }
 
 .Layout main {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-grow: 1;
-
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*flex-direction: row;*/
+    /*flex-grow: 1;*/
+    padding-left: 20px;;
 }
 
 .cnt-menu {

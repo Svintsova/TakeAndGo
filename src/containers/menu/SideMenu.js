@@ -13,14 +13,11 @@ const list = [
 
 
 const SideMenu = (props) => (
-    <ul className="ul-menu-list">
+    <ul className="MenuLinks">
         {list.map(item => (
             (item.id === 0 || item.id === 1) && props.user === 0 ?
             null :
-                <li
-                    key={item.id}
-                    className="menuItem"
-                >
+                <li key={item.id}>
                     <NavLink to={item.href}>{item.title}</NavLink>
                 </li>
         ))}

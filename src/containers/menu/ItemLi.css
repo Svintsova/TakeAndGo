@@ -1,14 +1,15 @@
-.menuItem {
-    list-style-type: none;
+.MenuLinks li {
     padding: 10px 20px;
     text-align: left;}
-.ul-menu-list {
-    padding: 10px 20px;
+
+.MenuLinks {
+    padding: 10px 0px;
     width: 100%;
+    list-style: none;
+    box-sizing: border-box;
 }
 
-.menuItem:hover {
+.MenuLinks li:hover {
     background-color: rgba(255,255,255,.1);
     transition: 0.5s;
-
 }
