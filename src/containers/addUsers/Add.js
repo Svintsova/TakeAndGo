@@ -52,7 +52,9 @@ export default class AddUser extends Component{
         event.preventDefault()
     }
 
-    createUserHandler = () => {
+    createUserHandler = async event => {
+        event.preventDefault()
+
         const user = []
         const index = user.length + 1
 
@@ -86,8 +88,9 @@ export default class AddUser extends Component{
         formControls[controlName] = control
 
         this.setState({
-            formControls,
-            isFormValid: validateForm(formControls)
+            user:[],
+            isFormValid: false,
+            formControls: createFormControls()
         })
     }
 

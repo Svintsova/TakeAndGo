@@ -15,6 +15,7 @@ function Actions() {
                 <Link to="/add"><Button variant="contained" color="primary" type="submit"
                                            >
                     Add
+
                 </Button>
                 </Link>
             </div>

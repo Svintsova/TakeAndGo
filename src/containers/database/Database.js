@@ -2,7 +2,10 @@ import React, {Component} from "react";
 import './Database.css'
 import UserList from "../../components/member/UserList";
 import axios from 'axios'
+import Loader from '../../components/UI/Loader/Loader.js'
+
 class Database extends Component{
+
     state = {
         users:[
             {
@@ -29,7 +32,8 @@ class Database extends Component{
                 surname: 'Пивко',
                 type: 'user',
             },
-        ]
+        ],
+        loading: true
     }
 
     async componentDidMount() {
@@ -40,13 +44,12 @@ class Database extends Component{
             Object.keys(response.data).forEach((key, index) =>{
                 users.push({
                     id: key,
-                    name: key.name,
-                    surname: key.surname,
-                    type: key.access,
+                    name: response.data[key].name,
+                    surname: response.data[key].surname,
+                    type: response.data[key].access,
                 })
-                this.state({users})
-
             })
+            this.setState({users, loading: false})
         } catch (e){
                 console.log(e)
             }
@@ -61,10 +64,15 @@ class Database extends Component{
             <div className="Database">
                 <h1>Список пользователей</h1>
                 <div className="MemberBox">
-                    <UserList
-                        users={this.state.users}
-                        onDeleteClick={this.onDeleteClickHandler}
-                    />
+                    {
+                        this.state.loading
+                        ? <Loader />
+                    :
+                            <UserList
+                                users={this.state.users}
+                                onDeleteClick={this.onDeleteClickHandler}
+                            />
+                    }
                 </div>
             </div>
         );
